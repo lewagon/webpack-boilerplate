@@ -14,12 +14,13 @@ Make sure you have `./node_modules/.bin` in your `$PATH`! This way you can run t
 
 ```bash
 eslint lib
+webpack-dev-server
 ```
 
 Once a file has been updated in Sublime, you can run it with:
 
 ```bash
-node lib/01_types_and_variables.js
+node lib/01_types.js
 ```
 
 ## How was this repo generated?
@@ -28,26 +29,28 @@ Environment setup:
 
 ```bash
 yarn init
-yarn add --dev eslint
+yarn add eslint
 ./node_modules/.bin/eslint --init
 # How would you like to configure ESLint? Use a popular style guide
 # Which style guide do you want to follow? Airbnb
-# Do you use React? Yes
+# Do you use React? No
 # What format do you want your config file to be in? JSON
 
-# Opened .eslintrc.json and add rules:
-# - "no-console": "off"
-# - "quotes": [ "warn", "double", { "avoidEscape": true } ]
+# Opened .eslintrc.json:
+#   Add rules
+#     - "no-console": "off"
+#     - "comma-dangle": "off"
+#     - "quotes": "off"
+#   Add env
+#     browser is true
+
+yarn add webpack webpack-dev-server html-webpack-plugin
+touch webpack.config.js # Open and configure
+touch index.html
+./node_modules/.bin/webpack-dev-server
 
 git init
 echo "node_modules" >> .gitignore
 git add .
 git commit -m "JavaScript empty project with ESLint (Airbnb)"
-```
-
-Empty files created with:
-
-```bash
-mkdir lib
-touch lib/01_types_and_variables.js
 ```

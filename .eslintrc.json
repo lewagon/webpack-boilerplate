@@ -1,7 +1,11 @@
 {
-  "extends": "airbnb",
+  "extends": "airbnb-base",
   "rules": {
     "no-console": "off",
-    "quotes": [ "warn", "double", { "avoidEscape": true } ]
+    "comma-dangle": "off",
+    "quotes": "off"
+  },
+  "env": {
+    "browser": true
   }
 }
