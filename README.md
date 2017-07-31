@@ -36,13 +36,7 @@ yarn add eslint
 # Do you use React? No
 # What format do you want your config file to be in? JSON
 
-# Opened .eslintrc.json:
-#   Add rules
-#     - "no-console": "off"
-#     - "comma-dangle": "off"
-#     - "quotes": "off"
-#   Add env
-#     browser is true
+# Open and edit rules in .eslintrc.json
 
 yarn add webpack webpack-dev-server html-webpack-plugin
 touch webpack.config.js # Open and configure
