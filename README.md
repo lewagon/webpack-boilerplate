@@ -6,6 +6,7 @@ First clone this repository to your laptop. You must have Node (> v4) and [yarn]
 mkdir -p ~/tmp && cd $_
 git clone git@github.com:lewagon/javascript-101.git
 cd javascript-101
+rm -rf .git
 yarn install
 stt # Open this folder in Sublime Text
 ```
