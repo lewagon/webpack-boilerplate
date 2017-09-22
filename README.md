@@ -39,7 +39,7 @@ yarn add eslint
 
 # Open and edit rules in .eslintrc.json
 
-yarn add webpack webpack-dev-server html-webpack-plugin
+yarn add webpack webpack-dev-server
 touch webpack.config.js # Open and configure
 touch index.html
 ./node_modules/.bin/webpack-dev-server
