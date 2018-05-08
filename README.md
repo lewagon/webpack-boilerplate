@@ -30,7 +30,7 @@ Environment setup:
 
 ```bash
 yarn init
-yarn add eslint
+yarn add eslint --dev
 ./node_modules/.bin/eslint --init
 # How would you like to configure ESLint? Use a popular style guide
 # Which style guide do you want to follow? Airbnb
@@ -39,7 +39,7 @@ yarn add eslint
 
 # Open and edit rules in .eslintrc.json
 
-yarn add webpack webpack-dev-server
+yarn add webpack webpack-cli webpack-dev-server
 touch webpack.config.js # Open and configure
 touch index.html
 ./node_modules/.bin/webpack-dev-server
