@@ -23,29 +23,3 @@ Once a file has been updated in Sublime, you can run it with:
 ```bash
 node lib/01_types.js
 ```
-
-## How was this repo generated?
-
-Environment setup:
-
-```bash
-yarn init
-yarn add eslint --dev
-./node_modules/.bin/eslint --init
-# How would you like to configure ESLint? Use a popular style guide
-# Which style guide do you want to follow? Airbnb
-# Do you use React? No
-# What format do you want your config file to be in? JSON
-
-# Open and edit rules in .eslintrc.json
-
-yarn add webpack webpack-cli webpack-dev-server
-touch webpack.config.js # Open and configure
-touch index.html
-./node_modules/.bin/webpack-dev-server
-
-git init
-echo "node_modules" >> .gitignore
-git add .
-git commit -m "JavaScript empty project with ESLint (Airbnb)"
-```
