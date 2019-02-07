@@ -4,8 +4,14 @@
     "browser": true
   },
   "rules": {
-    "quotes": "off",
+    "no-console": "off",
+    "no-alert": "off",
     "comma-dangle": "off",
-    "no-console": "off"
+    "quotes": "off",
+    "no-unused-vars": "off",
+    "no-param-reassign": "off",
+    "class-methods-use-this": "off",
+    "import/prefer-default-export": "off",
+    "prefer-destructuring": "off"
   }
 }
