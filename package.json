@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Starting code for First JavaScript ES6 lecture",
   "main": "index.js",
+  "scripts": {
+    "lint": "eslint lib",
+    "dev": "webpack-dev-server"
+  },
   "repository": "https://github.com/lewagon/webpack-boilerplate",
   "author": "ssaunier",
   "license": "MIT",
