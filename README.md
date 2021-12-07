@@ -18,7 +18,7 @@ eslint lib
 webpack-dev-server
 ```
 
-Once a file has been updated in Sublime, you can run it with:
+Once a file has been updated in your text editor, you can run it with:
 
 ```bash
 node lib/01_types.js
