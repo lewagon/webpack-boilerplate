@@ -8,7 +8,7 @@ git clone git@github.com:lewagon/webpack-boilerplate.git my-js-project
 cd my-js-project
 rm -rf .git
 yarn install
-code . # Open this folder in Sublime Text
+code . # Open this folder your text editor
 ```
 
 Make sure you have `./node_modules/.bin` in your `$PATH`! This way you can run this:
