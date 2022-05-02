@@ -11,7 +11,22 @@ yarn install
 code . # Open this folder your text editor
 ```
 
-Make sure you have `./node_modules/.bin` in your `$PATH`! This way you can run this:
+Make sure you have `./node_modules/.bin` in your `$PATH`:
+
+```bash
+echo $PATH
+# You should see `./node_modules/.bin` in the list
+```
+
+If it's not the case, add it: 
+
+```bash
+cd ~/code/dotfiles/YOUR-GITHUB-USERNAME
+echo 'export PATH="./bin:./node_modules/.bin:${PATH}"' >> zshrc
+source ~/.zshrc
+```
+
+This way you can run this:
 
 ```bash
 eslint lib
